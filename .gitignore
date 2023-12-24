@@ -1,2 +1,5 @@
 # Vendor directory for composer
 /vendor/
+
+# Enviroment configurations
+.env
