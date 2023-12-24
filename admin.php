@@ -53,7 +53,7 @@ $produtos = $produtoRepositorio->getTodosProdutos();
               <td><?= $produto->getDescricao() ?></td>
               <td><?= $produto->getPrecoFormatado() ?></td>
               <td>
-                <a class="botao-editar" href="editar-produto.html">Editar</a>
+                <a class="botao-editar" href="editar-produto.php?id=<?= $produto->getId() ?>">Editar</a>
               </td>
               <td>
                 <form action="excluir-produto.php" method="post">
