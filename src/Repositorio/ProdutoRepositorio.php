@@ -11,12 +11,14 @@ class ProdutoRepositorio
 
     private function formarObjeto($dados)
     {
-        return new Produto($dados['id'],
+        return new Produto(
+            $dados['id'],
             $dados['tipo'],
             $dados['nome'],
             $dados['descricao'],
             $dados['imagem'],
-            $dados['preco']);
+            $dados['preco']
+        );
     }
 
     public function getOpcoesCafe(): array
@@ -58,5 +60,13 @@ class ProdutoRepositorio
         }, $dados);
 
         return $todosOsDados;
+    }
+
+    public function deletar(int $id): void
+    {
+        $sql = "DELETE FROM produtos WHERE id = ?";
+        $statement = $this->pdo->prepare($sql);
+        $statement->bindValue(1, $id);
+        $statement->execute();
     }
 }
