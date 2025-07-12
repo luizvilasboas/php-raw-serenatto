@@ -20,7 +20,7 @@ Follow the steps below to set up the development environment:
 
 1. **Clone the Repository:**
    ```
-   git clone https://gitlab.com/alura-courses-code/php/php-raw-serenatto.git
+   git clone https://github.com/luizvilasboas/php-raw-serenatto.git
    ```
 
 2. **Install Dependencies with Composer:**
@@ -56,4 +56,4 @@ If you wish to contribute to this project, feel free to open a merge request. We
 
 ## License
 
-This project is licensed under the [MIT](https://gitlab.com/alura-courses-code/php/php-raw-serenatto/-/blob/main/LICENSE). Refer to the LICENSE file for more details.
+This project is licensed under the [MIT](https://github.com/luizvilasboas/php-raw-serenatto/blob/main/LICENSE). Refer to the LICENSE file for more details.
